@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_margin_top">50dp</dimen>
+    <dimen name="et_padding">10dp</dimen>
+    <dimen name="et_padding_left">10dp</dimen>
+    <dimen name="et_padding_top">20dp</dimen>
+    <dimen name="btn_submit_padding_vertical">10dp</dimen>
+    <dimen name="btn_submit_margintop">40dp</dimen>
+    <dimen name="text_size_button">15sp</dimen>
+</resources>

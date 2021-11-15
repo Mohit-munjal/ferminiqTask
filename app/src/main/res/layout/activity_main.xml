@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+<data>
+    <variable
+        name="activity"
+        type="com.dev.ferminiqtask.MainActivity" />
+</data>
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="@dimen/title_margin_top"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/screen_title"
+         />
+
+    <LinearLayout
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="@dimen/et_padding_left"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="@string/password"
+
+            android:layout_marginTop="@dimen/et_padding_top"
+            android:paddingLeft="@dimen/et_padding_left"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:hint="@string/confirm_password"
+            android:layout_marginTop="@dimen/et_padding_top"
+            android:paddingLeft="@dimen/et_padding_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:onClick="@{()->activity.onSubmit()}"
+            android:id="@+id/tvSubmit"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="@dimen/btn_submit_margintop"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_button"
+            android:paddingVertical="@dimen/btn_submit_padding_vertical"
+            android:text="@string/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</layout>
